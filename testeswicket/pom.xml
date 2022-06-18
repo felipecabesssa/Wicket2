@@ -89,6 +89,14 @@
 			<version>${jetty.version}</version>
 			<scope>provided</scope>
 		</dependency>
+		
+		<!--  POSTGRE  -->
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<version>9.3-1102-jdbc41</version>
+			<scope>provided</scope>
+		</dependency>
 	</dependencies>
 	<build>
 		<resources>
