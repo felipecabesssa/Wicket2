@@ -35,4 +35,9 @@ public class Contato implements Serializable{
 	public void setTelefone(String telefone) {
 		this.telefone = telefone;
 	}
+	
+	@Override
+	public String toString(){
+		return "{Contato: nome='" + nome + "' email='" + email + "' telefone='" + telefone + "'}";
+	}
 }
