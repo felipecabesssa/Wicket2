@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+<meta charset="UTF-8">
+<title>Wicket - AgendaTim</title>
+
+<style>
+.flex-container{
+	display: flex;
+	align-items: strech;
+}
+
+#blocoEsquerdo{
+	flex-grow: 2;
+}
+#blocoDireito{
+	flex-grow: 8;
+}
+</style>
+
+</head>
+<body>
+	<h1>Wicket - Agenda Eletrônica TIM</h1>
+	
+	<div class="flex-container">
+		<div id="blocoEsquerdo">
+			<wicket:link>
+				<a href="Inicio.html">Início</a>
+				<br />
+				<a href="Criar.html">Adicionar Contato</a>
+				<br />
+				<a href="Pesquisar.html">Pesquisar Contatos</a>
+			</wicket:link>
+		</div>
+		
+		<div id="blocoDireito">
+			<!-- página filha vem aqui -->
+			<wicket:child />
+		</div>
+	</div>
+	
+	<footer>
+		<hr />
+		TimTec &nbsp;&nbsp;&bull;&nbsp;&nbsp;<a href="#">Sair</a>
+	</footer>
+	
+</body>
+</html>
